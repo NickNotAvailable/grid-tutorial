@@ -1,3 +1,24 @@
+/* 
+==============
+Variables
+==============
+*/
+
+:root {
+  --PrimaryColor: #f53345;
+  --Black: #222;
+  --White: #fff;
+  --offWhite: #f7f7f7;
+  --DarkGrey: #afafaf;
+  --Transition: all 0.3s linear;
+}
+
+/* 
+==============
+Global styles
+==============
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,19 +26,177 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
+  font-family: "Fira Code", monospace;
+  color: var(--Black);
+  background: var(--White);
+  line-height: 1.5;
 }
 
-.container {
-  border: 5px solid black;
+a {
+  text-decoration: none;
 }
 
-.cell {
-  padding: 2rem;
-  background: #dedede;
-  text-transform: uppercase;
-  font-weight: bold;
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--PrimaryColor);
+  color: var(--PrimaryColor);
+  margin: 3rem;
+  transition: var(--Transition);
+}
+
+.btn:hover {
+  background: var(--PrimaryColor);
+  color: var(--White);
+}
+
+/* 
+==============
+Navbar
+==============
+*/
+
+.main-navbar {
+  background: var(--DarkGrey);
+  padding: 0 2rem;
+}
+
+.main-navbar li {
+  list-style: none;
+}
+
+.main-navbar a {
+  text-transform: capitalize;
+  display: block;
+  padding: 1rem 0;
+  color: var(--PrimaryColor);
+  transition: var(--Transition);
+}
+
+.main-navbar a:hover {
+  color: var(--Black);
+}
+
+@media screen and (min-width: 992px) {
+  .main-navbar ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-navbar a {
+    text-align: center;
+  }
+}
+
+/* 
+==============
+Hero
+==============
+*/
+
+.hero-header {
+  min-height: 100vh;
+  background: var(--PrimaryColor);
+  color: var(--White);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  /* background: blue; */
+  /* text-align: center; */
+}
+
+.hero-banner p {
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-banner {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)),
+      url(./images/hero\ bg.jpg) center/cover fixed no-repeat;
+  }
+}
+
+/* 
+==============
+Cards
+==============
+*/
+
+.card-icon {
+  width: 1.5rem;
+  display: inline-block;
+}
+
+.title {
   text-align: center;
-  border: 3px solid red;
+}
+
+.cards {
+  padding: 4rem 0;
+}
+
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+
+.card {
+  border: 1px solid var(--DarkGrey);
+  margin-bottom: 3rem;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-footer {
+  background: var(--DarkGrey);
+  padding: 0.75rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media screen and (min-width: 768px) {
 }
