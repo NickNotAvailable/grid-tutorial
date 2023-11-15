@@ -132,11 +132,6 @@ Hero
   align-items: center;
 }
 
-.hero-banner {
-  /* background: blue; */
-  /* text-align: center; */
-}
-
 .hero-banner p {
   width: 80%;
   max-width: 560px;
@@ -199,4 +194,17 @@ Cards
 }
 
 @media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
 }
