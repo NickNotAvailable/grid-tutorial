@@ -14,6 +14,7 @@ Variables
   --transition: all 0.3s linear;
   --max-width: 1170px;
   --shadow: 0px 4px 4px rgba(3, 7, 18, 0.05);
+  --border-radius: 8px;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -68,7 +69,7 @@ Assets
   background-color: var(--clr-primary);
   color: white;
   font-weight: 700;
-  border: transparent;
+  border: 1px solid var(--clr-primary);
   transition: var(--transition);
   text-transform: capitalize;
   border-radius: 8px;
@@ -77,92 +78,85 @@ Assets
 .btn:hover {
   color: var(--clr-primary);
   background-color: var(--clr-white);
-  border: 1px solid;
-  border-color: var(--clr-primary);
 }
 
 /* 
 ===========
-Navbar
+Task Manager
 ===========
 */
 
-nav {
-  background-color: var(--clr-white);
-  height: 4rem;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  box-shadow: var(--shadow);
+.form {
+  background: var(--clr-white);
+  padding: 3rem;
+  max-width: 600px;
+  margin: 3rem auto;
+  box-shadow: 0px 4px 20px rgba(3, 7, 18, 0.05);
+  border-radius: var(--border-radius);
 }
 
-.nav-center {
-  width: 90vw;
-  max-width: var(--max-width);
-  /* margin: 0 auto; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.form h4 {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
 }
 
-.nav-center h4 {
-  color: var(--clr-primary);
+.form-input {
+  display: block;
+  background: #f5f5f5;
+  border: 1px solid #e7e7e7;
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 0 1rem;
+::placeholder {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  color: #c2c2c4;
 }
 
-nav a {
+input[type="text"] {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--clr-black);
+}
+
+.form-alert {
+  color: red;
   text-transform: capitalize;
-  font-size: 1rem;
-  color: var(--clr-secondary);
-  transition: var(--transition);
 }
 
-nav a:hover {
-  color: var(--clr-primary);
+.task-form {
+  margin-top: 6rem;
 }
 
-/* 
-===========
-Container
-===========
-*/
-
-main {
-  height: calc(100vh - 4rem);
-  display: grid;
-  place-items: center;
-}
-
-.container {
+.task-form h4 {
   text-align: center;
 }
 
-.container h2 {
-  background: var(--clr-black);
-  color: var(--clr-white);
-  padding: 1rem 2rem;
-  border-radius: 16px;
-  margin-bottom: 2rem;
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
 }
 
-.color {
-  color: var(--clr-primary);
-  text-transform: uppercase;
+@media screen and (min-width: 576px) {
+  .form-control {
+    display: flex;
+  }
+  .task-input {
+    border-radius: 0;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+  }
+  .submit-btn {
+    margin-top: 0;
+    border-radius: 0;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    width: 175px;
+  }
 }
 
-.btn-hero {
-  text-transform: uppercase;
-  background: transparent;
-  border: 1px solid var(--clr-black);
-  color: var(--clr-black);
-  padding: 0.75rem 1.25rem;
-}
-
-.btn-hero:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+.text-success {
+  color: green;
 }
