@@ -160,3 +160,50 @@ input[type="text"] {
 .text-success {
   color: green;
 }
+
+/* ============================================================ */
+
+.tasks-container {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.tasks {
+  display: grid;
+  gap: 1rem;
+}
+
+.icon {
+  display: block;
+  height: 1.4rem;
+}
+
+.task-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.single-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--clr-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.task-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edit-btn {
+  background: transparent;
+  border: none;
+}
