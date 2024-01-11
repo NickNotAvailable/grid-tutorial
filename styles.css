@@ -8,7 +8,7 @@ body {
 .hero-section {
   position: relative;
   height: 100vh;
-  background: url("images/water\ hero.jpg") center/cover no-repeat;
+  background: url("images/water hero.jpg") center/cover no-repeat;
   color: #fff;
   text-align: center;
   display: flex;
