@@ -7,79 +7,89 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="menu">
-      <!-- title -->
-      <div class="title">
-        <h2>our menu</h2>
-        <div class="title-underline"></div>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="hero-section"></div>
+
+    <div class="features-section"></div>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">Refresh Yourself with Pure Bottled Water</h1>
+        <p class="hero-subtitle">
+          Discover the crisp taste of premium bottled water sourced from
+          pristine natural springs.
+        </p>
+        <a href="#learn-more" class="cta-button">Learn More</a>
       </div>
-      <!-- end of title -->
-      <!-- filter buttons -->
-      <div class="btn-container">
-        <button type="button" class="btn filter-btn">all</button>
-        <button type="button" class="btn filter-btn">breakfast</button>
-        <button type="button" class="btn filter-btn">lunch</button>
-        <button type="button" class="btn filter-btn">shakes</button>
+    </div>
+    <div class="features-section">
+      <div class="feature">
+        <div class="feature-icon">&#x1F4A7;</div>
+        <!-- Water drop emoji -->
+        <h2 class="feature-title">Purity Guaranteed</h2>
+        <p class="feature-description">
+          Our bottled water undergoes rigorous purification processes to ensure
+          it is of the highest quality, free from impurities.
+        </p>
       </div>
-      <!-- end of filter buttons -->
-      <div class="section-center">
-        <!-- single item 1-->
-        <article class="menu-item">
-          <img
-            src="images/breakfast.jpg"
-            alt="breakfast photo"
-            class="img photo"
-          />
-          <div class="item-info">
-            <header>
-              <h3>pancakes</h3>
-              <span class="price">$15</span>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              libero, temporibus perspiciatis fugit quas repellendus.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item 2-->
-        <article class="menu-item">
-          <img
-            src="images/breakfast.jpg"
-            alt="breakfast photo"
-            class="img photo"
-          />
-          <div class="item-info">
-            <header>
-              <h3>pancakes</h3>
-              <span class="price">$15</span>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              libero, temporibus perspiciatis fugit quas repellendus.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item 3-->
-        <article class="menu-item">
-          <img
-            src="images/breakfast.jpg"
-            alt="breakfast photo"
-            class="img photo"
-          />
-          <div class="item-info">
-            <header>
-              <h3>pancakes</h3>
-              <span class="price">$15</span>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              libero, temporibus perspiciatis fugit quas repellendus.
-            </p>
-          </div>
-        </article>
+
+      <div class="feature">
+        <div class="feature-icon">&#x1F349;</div>
+        <!-- Leaf emoji -->
+        <h2 class="feature-title">Natural Spring Source</h2>
+        <p class="feature-description">
+          Sourced from natural springs, our water is enriched with essential
+          minerals, providing a refreshing and healthy experience.
+        </p>
       </div>
-    </section>
+
+      <div class="feature">
+        <div class="feature-icon">&#x1F36A;</div>
+        <!-- Apple emoji -->
+        <h2 class="feature-title">Zero Calories</h2>
+        <p class="feature-description">
+          Enjoy the pure taste of water without any added calories. Stay
+          hydrated and maintain a healthy lifestyle with our zero-calorie
+          bottled water.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-social">
+        <a href="#" target="_blank">&#xf09a;</a>
+        <!-- Facebook icon -->
+        <a href="#" target="_blank">&#xf099;</a>
+        <!-- Twitter icon -->
+        <a href="#" target="_blank">&#xf16d;</a>
+        <!-- Instagram icon -->
+      </div>
+
+      <div class="footer-contact">
+        <p>Contact us: info@bottledwater.com</p>
+      </div>
+
+      <div class="footer-form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2024 Bottled Water. All rights reserved.</p>
+      </div>
+    </div>
   </body>
 </html>
