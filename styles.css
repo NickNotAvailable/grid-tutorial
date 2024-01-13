@@ -4,116 +4,38 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.section {
-  margin: 0 auto;
-  width: 400px;
-  height: 100vh;
-
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(images/hero-laptop.jpg) center/cover no-repeat fixed;
   text-align: center;
 }
 
-h2 {
-  margin-top: 50px;
+h1 {
+  font-size: 3rem;
+  color: rgb(186, 190, 194);
+  margin-top: 8rem;
 }
 
-.robot {
-  margin-top: 100px;
+.btn {
+  font-weight: 700;
+  border-radius: 16px;
+  text-transform: uppercase;
 }
 
-/* head ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-.head {
-  height: 150px;
-  margin: 0 60px;
-  background: rgb(32, 158, 216);
-  display: flex;
-  justify-content: space-around;
-  align-items: end;
-  border-radius: 200px 200px 0 0;
-  margin-bottom: 30px;
-  padding: 20px;
+.btn-primary {
+  background-color: rgb(22, 56, 167);
+  border: transparent;
   transition: all 0.3s linear;
 }
 
-.head:hover {
-  margin-left: 0;
-  margin-right: 0;
+.btn-primary:hover {
+  background-color: rgba(22, 56, 167, 0.7);
+  transform: scale(1.1);
 }
 
-.lefteye {
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-}
-
-.righteye {
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-}
-
-.invisibleeye {
-  width: 20px;
-  height: 20px;
-  background: rgb(32, 158, 216);
-  border-radius: 50%;
-}
-
-/* body ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-.body {
-  display: flex;
-  justify-content: space-between;
-}
-
-.lefthand {
-  width: 40px;
-  height: 150px;
-  background: rgb(32, 158, 216);
-  border-radius: 50px;
-  transition: all 0.3s linear;
-}
-
-.lefthand:hover {
-  transform: rotate(30deg);
-}
-
-.chest {
-  background: rgb(32, 158, 216);
-  width: 280px;
-  height: 250px;
-  border-radius: 0 0 50px 50px;
-}
-
-.righthand {
-  width: 40px;
-  height: 150px;
-  background: rgb(32, 158, 216);
-  border-radius: 50px;
-}
-
-.legs {
-  display: flex;
-  justify-content: space-around;
-}
-
-.leftleg {
-  width: 40px;
-  height: 100px;
-  background: rgb(32, 158, 216);
-  border-radius: 0 0 50px 50px;
-}
-
-.rightleg {
-  width: 40px;
-  height: 100px;
-  background: rgb(32, 158, 216);
-  border-radius: 0 0 50px 50px;
+.btn-xl {
+  padding: 1rem 2rem;
 }
